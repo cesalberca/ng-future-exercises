@@ -12,7 +12,9 @@
       "schematics": {
         "@schematics/angular:component": {
           "displayBlock": true,
-          "changeDetection": "OnPush"
+          "changeDetection": "OnPush",
+          "inlineTemplate": true,
+          "inlineStyle": true
         }
       },
       "root": "",
