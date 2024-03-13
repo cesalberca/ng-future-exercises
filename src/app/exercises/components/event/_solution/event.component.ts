@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, input } from '@angular/core'
 
 @Component({
   selector: 'app-event',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core'
   imports: [],
 })
 export class EventPage {
-  event: string = 'Unknown'
+  event = input<string>('Unkown')
 }
