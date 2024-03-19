@@ -1,0 +1,25 @@
+.wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 48px;
+}
+
+.statement {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.solution {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.user-solution {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  grid-area: 2 / 2 / 3 / 3;
+}

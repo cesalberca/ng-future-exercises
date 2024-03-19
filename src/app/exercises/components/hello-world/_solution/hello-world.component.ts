@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'app-hello-world',
+  selector: 'app-hello-world-solution',
   styles: [
     `
       .title {
@@ -13,4 +13,4 @@ import { Component } from '@angular/core'
   standalone: true,
   imports: [],
 })
-export class HelloWorldPage {}
+export class HelloWorldSolutionComponent {}

@@ -1,12 +1,12 @@
 import { Component, input } from '@angular/core'
 
 @Component({
-  selector: 'app-event-solution',
+  selector: 'app-event',
   styleUrl: './event.component.css',
   templateUrl: './event.component.html',
   standalone: true,
   imports: [],
 })
-export class EventSolutionComponent {
+export class EventComponent {
   event = input<string>('Unkown')
 }

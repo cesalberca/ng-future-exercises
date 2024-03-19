@@ -1,14 +1,14 @@
 import { Routes } from '@angular/router'
-import { HelloWorldPage } from './exercises/components/hello-world/_solution/hello-world.component'
 import { FilesDistributionPage } from './exercises/components/files-distribution/_solution/files-distribution.component'
-import { EventPage } from './exercises/components/event/_solution/event.component'
 import { EventsListPage } from './exercises/components/events-list/_solution/events-list.component'
+import { EventExercisePage } from './exercises/components/event/page/event-exercise.page'
+import { HelloWorldExercisePage } from './exercises/components/hello-world/page/hello-world.page'
 
 export const routes: Routes = [
   {
     title: 'Hello World',
-    path: 'hello-world-solution',
-    component: HelloWorldPage,
+    path: 'hello-world',
+    component: HelloWorldExercisePage,
   },
   {
     title: 'Files Distribution',
@@ -17,12 +17,17 @@ export const routes: Routes = [
   },
   {
     title: 'Event',
-    path: 'event-solution',
-    component: EventPage,
+    path: 'event-exercise-page',
+    component: EventExercisePage,
   },
   {
     title: 'Events List',
     path: 'events-list-solution',
     component: EventsListPage,
+  },
+  {
+    title: 'Hello World',
+    path: '**',
+    component: HelloWorldExercisePage,
   },
 ]

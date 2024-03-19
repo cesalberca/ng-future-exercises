@@ -1,0 +1,9 @@
+<div class='navigator'>
+    <div class="solution-wrapper">
+        <ng-content></ng-content>
+    </div>
+    <div class="buttons">
+        <a class="button outline" [routerLink]="currentPage.prev">Prev</a>
+        <button class="button accent" [routerLink]="currentPage.next">Continue</button>
+    </div>
+</div>

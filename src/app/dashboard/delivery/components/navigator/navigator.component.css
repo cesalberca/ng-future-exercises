@@ -1,0 +1,45 @@
+.navigator {
+  margin: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100dvh - 48px * 2);
+}
+
+.solution-wrapper {
+  flex: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.button {
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius);
+  transition: 200ms ease;
+  font-size: medium;
+  text-decoration: none;
+}
+
+.button.outline {
+  color: var(--text-color);
+  background: var(--bg-color);
+  border: 1px solid var(--text-color);
+}
+
+.button.accent {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  color: var(--bg-color);
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
