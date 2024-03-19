@@ -6,7 +6,7 @@ import { statement } from './statement'
 import { MarkdownComponent } from '../../../../dashboard/delivery/components/markdown/markdown.component'
 
 @Component({
-  selector: 'app-event-exercise-page',
+  selector: 'app-event-exercise',
   standalone: true,
   template: `
     <app-solution-component>

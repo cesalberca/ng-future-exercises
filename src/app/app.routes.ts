@@ -17,7 +17,7 @@ export const routes: Routes = [
   },
   {
     title: 'Event',
-    path: 'event-exercise-page',
+    path: 'event-exercise',
     component: EventExercisePage,
   },
   {

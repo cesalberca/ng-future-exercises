@@ -6,7 +6,7 @@ import { EventsListSolutionComponent } from '../_solution/events-list.component'
 import { EventsListComponent } from '../events-list.component'
 
 @Component({
-  selector: 'app-event-exercise-page',
+  selector: 'app-event-exercise',
   standalone: true,
   template: `
     <app-solution-component>

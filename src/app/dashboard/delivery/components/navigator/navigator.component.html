@@ -1,9 +1,14 @@
 <div class='navigator'>
-    <div class="solution-wrapper">
-        <ng-content></ng-content>
+    <div class="navbar">
+        <select class="selector">
+            @for (page of pagesList; track page.link) {
+                <option>{{page.title}}</option>
+            }
+        </select>
+        <a class="button" [routerLink]="currentPage.prev"><ng-icon name="heroChevronLeft"></ng-icon></a>
+        <a class="button" [routerLink]="currentPage.next"><ng-icon name="heroChevronRight"></ng-icon></a>
     </div>
-    <div class="buttons">
-        <a class="button outline" [routerLink]="currentPage.prev">Prev</a>
-        <button class="button accent" [routerLink]="currentPage.next">Continue</button>
+    <div class="content">
+        <ng-content></ng-content>
     </div>
 </div>
