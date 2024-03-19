@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router'
-import { FilesDistributionPage } from './exercises/components/files-distribution/_solution/files-distribution.component'
-import { EventsListPage } from './exercises/components/events-list/_solution/events-list.component'
 import { EventExercisePage } from './exercises/components/event/page/event-exercise.page'
 import { HelloWorldExercisePage } from './exercises/components/hello-world/page/hello-world.page'
+import { FilesDistributionPage } from './exercises/components/files-distribution/page/files-distribution.page'
+import { EventsListPage } from './exercises/components/events-list/page/events-list.page'
 
 export const routes: Routes = [
   {
@@ -12,7 +12,7 @@ export const routes: Routes = [
   },
   {
     title: 'Files Distribution',
-    path: 'files-distribution-solution',
+    path: 'files-distribution',
     component: FilesDistributionPage,
   },
   {
@@ -22,7 +22,7 @@ export const routes: Routes = [
   },
   {
     title: 'Events List',
-    path: 'events-list-solution',
+    path: 'events-list',
     component: EventsListPage,
   },
   {

@@ -4,8 +4,9 @@ import { marked } from 'marked'
 @Component({
   selector: 'app-markdown',
   standalone: true,
-  template: `<p [innerHTML]="getParsedText(this.text())"></p>`,
+  template: `<div class="markdown" [innerHTML]="getParsedText(this.text())"></div>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
+  styleUrl: './markdown.component.css',
 })
 export class MarkdownComponent {
   text = input.required<string>()

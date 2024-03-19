@@ -1,22 +1,22 @@
 import { Component } from '@angular/core'
 import { SolutionComponent } from '../../../../dashboard/delivery/components/solution/solution.component'
-import { EventSolutionComponent } from '../_solution/event.component'
-import { EventComponent } from '../event.component'
 import { statement } from './statement'
 import { MarkdownComponent } from '../../../../dashboard/delivery/components/markdown/markdown.component'
+import { FilesDistributionSolutionComponent } from '../_solution/files-distribution.component'
+import { FilesDistributionComponent } from '../files-distribution.component'
 
 @Component({
-  selector: 'app-event-exercise-page',
+  selector: 'app-hello-world-page',
   standalone: true,
   template: `
     <app-solution-component>
       <app-markdown statement [text]="text" />
-      <app-event-solution solution event="Meditar" />
-      <app-event user-solution />
+      <app-files-distribution-solution solution />
+      <app-files-distribution user-solution />
     </app-solution-component>
   `,
-  imports: [SolutionComponent, EventSolutionComponent, EventComponent, MarkdownComponent],
+  imports: [SolutionComponent, MarkdownComponent, FilesDistributionSolutionComponent, FilesDistributionComponent],
 })
-export class EventExercisePage {
+export class FilesDistributionPage {
   text = statement
 }

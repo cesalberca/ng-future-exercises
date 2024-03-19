@@ -8,5 +8,5 @@ import { Component, input } from '@angular/core'
   imports: [],
 })
 export class EventSolutionComponent {
-  event = input<string>('Unkown')
+  event = input.required<string>()
 }

@@ -16,32 +16,32 @@ export class NavigatorComponent {
   pageList: { [key: string]: PageNode } = {
     '': {
       prev: 'hello-world',
-      next: 'files-distribution-solution',
+      next: 'files-distribution',
       link: '',
       title: 'Hello World (Solution)',
     },
     'hello-world': {
       prev: 'hello-world',
-      next: 'files-distribution-solution',
+      next: 'files-distribution',
       link: 'hello-world',
       title: 'Hello World (Solution)',
     },
-    'files-distribution-solution': {
+    'files-distribution': {
       prev: 'hello-world',
       next: 'event-exercise-page',
-      link: 'files-distribution-solution',
+      link: 'files-distribution',
       title: 'Files Distribution (Solution)',
     },
     'event-exercise-page': {
-      prev: 'files-distribution-solution',
-      next: 'events-list-solution',
+      prev: 'files-distribution',
+      next: 'events-list',
       link: 'event-exercise-page',
       title: 'Ejercicio 3. Event.',
     },
-    'events-list-solution': {
+    'events-list': {
       prev: 'event-exercise-page',
-      next: 'events-list-solution',
-      link: 'events-list-solution',
+      next: 'events-list',
+      link: 'events-list',
       title: 'Events List (Solution)',
     },
   }
