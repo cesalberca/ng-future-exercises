@@ -4,3 +4,9 @@
   gap: 8px;
   list-style: none;
 }
+
+.no-habits {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

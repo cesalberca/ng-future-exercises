@@ -4,7 +4,10 @@
             <li class="habit-wrapper"><app-habit-solution [habit]="habit" /></li>
         }
     } @else {
-        <p>No Habits</p>
+        <div class="no-habits">
+            <ng-icon name="heroShieldExclamation"></ng-icon>
+            <p>No hay hábitos creados</p>
+        </div>
     }
     
 </ul>
