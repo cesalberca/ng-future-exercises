@@ -1,5 +1,15 @@
-.markdown {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.markdown h1 {
+  margin-bottom: 24px;
+}
+
+.markdown h2 {
+  margin-bottom: 8px;
+}
+
+.markdown p {
+  margin-bottom: 8px;
+}
+
+.markdown ul {
+  margin-left: 24px;
 }

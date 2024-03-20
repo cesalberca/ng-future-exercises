@@ -1,8 +1,9 @@
 import { Routes } from '@angular/router'
-import { EventExercisePage } from './exercises/components/event/page/event-exercise.page'
+import { EventExercisePage } from './exercises/components/habit/page/habit-exercise.page'
 import { HelloWorldExercisePage } from './exercises/components/hello-world/page/hello-world.page'
 import { FilesDistributionPage } from './exercises/components/files-distribution/page/files-distribution.page'
-import { EventsListPage } from './exercises/components/events-list/page/events-list.page'
+import { HabitsListPage } from './exercises/components/habits-list/page/habits-list.page'
+import { IfExercisePage } from './exercises/components/if/page/if-exercise.page'
 
 export const routes: Routes = [
   {
@@ -16,14 +17,19 @@ export const routes: Routes = [
     component: FilesDistributionPage,
   },
   {
-    title: 'Event',
-    path: 'event-exercise',
+    title: 'Habit',
+    path: 'habit-exercise',
     component: EventExercisePage,
   },
   {
-    title: 'Events List',
-    path: 'events-list',
-    component: EventsListPage,
+    title: 'Habits List',
+    path: 'habits-list',
+    component: HabitsListPage,
+  },
+  {
+    title: 'Conditional Rendering',
+    path: 'conditional-rendering',
+    component: IfExercisePage,
   },
   {
     title: 'Hello World',

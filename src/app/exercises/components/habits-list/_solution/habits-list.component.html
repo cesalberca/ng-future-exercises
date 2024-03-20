@@ -1,0 +1,5 @@
+<ul class="habits-list">
+    @for (habit of habits; track habit) {
+        <li class="habit-wrapper"><app-habit-solution [habit]="habit" /></li>
+    }
+</ul>

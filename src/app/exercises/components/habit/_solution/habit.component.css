@@ -1,9 +1,9 @@
-.event {
+.habit {
   padding: 24px 12px;
   border: 1px solid var(--text-color);
   border-radius: var(--border-radius);
 }
 
-.event-name {
+.habit-name {
   color: var(--primary-color);
 }

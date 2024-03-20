@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core'
+import { ChangeDetectionStrategy, Component, input, ViewEncapsulation } from '@angular/core'
 import { marked } from 'marked'
 
 @Component({
@@ -7,6 +7,7 @@ import { marked } from 'marked'
   template: `<div class="markdown" [innerHTML]="getParsedText(this.text())"></div>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './markdown.component.css',
+  encapsulation: ViewEncapsulation.None,
 })
 export class MarkdownComponent {
   text = input.required<string>()

@@ -3,13 +3,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core'
 @Component({
   selector: 'app-if',
   standalone: true,
+  templateUrl: './if.component.html',
+  styleUrl: './if.component.css',
   imports: [],
-  template: ` <p>if works!</p> `,
-  styles: `
-    :host {
-      display: block;
-    }
-  `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class IfComponent {}
