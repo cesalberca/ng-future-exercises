@@ -1,15 +1,23 @@
 .markdown h1 {
-  margin-bottom: 24px;
+  margin: 12px 0;
+  font-weight: normal;
 }
 
 .markdown h2 {
-  margin-bottom: 8px;
+  margin: 8px 0;
+  font-weight: normal;
 }
 
 .markdown p {
-  margin-bottom: 8px;
+  margin: 8px 0;
+  color: var(--text-color);
 }
 
-.markdown ul {
+.markdown ul,
+.markdown ol {
   margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--text-color);
 }
