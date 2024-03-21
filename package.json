@@ -24,7 +24,8 @@
     "@ng-icons/core": "^27.2.0",
     "@ng-icons/font-awesome": "^27.2.0",
     "@ng-icons/heroicons": "^27.2.0",
-    "marked": "^12.0.1",
+    "marked": "^9.1.6",
+    "ngx-markdown": "^17.1.1",
     "rxjs": "7.8.1",
     "tslib": "2.6.2",
     "zone.js": "0.14.4"

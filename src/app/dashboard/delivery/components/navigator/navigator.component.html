@@ -5,8 +5,8 @@
                 <option>{{page.title}}</option>
             }
         </select>
-        <a class="button" [routerLink]="currentPage.prev"><ng-icon name="heroChevronLeft"></ng-icon></a>
-        <a class="button" [routerLink]="currentPage.next"><ng-icon name="heroChevronRight"></ng-icon></a>
+        <a [class]="isFirstPage ? 'button disabled' : 'button'" [routerLink]="currentPage.prev"><ng-icon name="heroChevronLeft"></ng-icon></a>
+        <a [class]="isLastPage ? 'button disabled' : 'button'" [routerLink]="currentPage.next"><ng-icon name="heroChevronRight"></ng-icon></a>
     </div>
     <div class="content">
         <ng-content></ng-content>

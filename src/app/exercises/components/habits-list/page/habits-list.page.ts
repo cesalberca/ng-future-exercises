@@ -1,7 +1,6 @@
 import { Component } from '@angular/core'
 import { SolutionComponent } from '../../../../dashboard/delivery/components/solution/solution.component'
-import { statement } from './statement'
-import { MarkdownComponent } from '../../../../dashboard/delivery/components/markdown/markdown.component'
+import { MdComponent } from '../../../../dashboard/delivery/components/markdown/markdown.component'
 import { HabitsListSolutionComponent } from '../_solution/habits-list.component'
 import { HabitsListComponent } from '../habits-list.component'
 
@@ -10,13 +9,11 @@ import { HabitsListComponent } from '../habits-list.component'
   standalone: true,
   template: `
     <app-solution-component>
-      <app-markdown statement [text]="text" />
+      <app-markdown statement src="assets/app/exercises/components/habits-list/README.md" />
       <app-habits-list-solution solution />
       <app-habits-list user-solution />
     </app-solution-component>
   `,
-  imports: [SolutionComponent, MarkdownComponent, HabitsListSolutionComponent, HabitsListComponent],
+  imports: [SolutionComponent, MdComponent, HabitsListSolutionComponent, HabitsListComponent],
 })
-export class HabitsListPage {
-  text = statement
-}
+export class HabitsListPage {}

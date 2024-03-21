@@ -2,13 +2,13 @@ import { PageNode } from '../../../domain/page-node'
 
 export const pagesMap: { [key: string]: PageNode } = {
   '': {
-    prev: 'hello-world',
+    prev: null,
     next: 'files-distribution',
     link: '',
     title: 'Hello World',
   },
   'hello-world': {
-    prev: 'hello-world',
+    prev: null,
     next: 'files-distribution',
     link: 'hello-world',
     title: 'Ejercicio 1. Hello World.',
@@ -33,7 +33,7 @@ export const pagesMap: { [key: string]: PageNode } = {
   },
   'conditional-rendering': {
     prev: 'habits-list',
-    next: 'conditional-rendering',
+    next: null,
     link: 'conditional-rendering',
     title: 'Ejercicio 5. Conditional Rendering.',
   },

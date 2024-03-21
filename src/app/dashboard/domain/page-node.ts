@@ -1,6 +1,6 @@
 export interface PageNode {
-  prev: string
-  next: string
+  prev: string | null
+  next: string | null
   link: string
   title: string
 }

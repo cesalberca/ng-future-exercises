@@ -19,11 +19,15 @@ export class NavigatorComponent {
 
   pagesList = Object.values(pagesMap).splice(1)
   currentPage = pagesMap[this.location.path().replace('/', '')]
+  isFirstPage = this.currentPage.prev === null
+  isLastPage = this.currentPage.next === null
 
   constructor(private location: Location) {}
 
   ngDoCheck() {
     const pathname = this.location.path().replace('/', '')
     this.currentPage = pagesMap[pathname]
+    this.isFirstPage = this.currentPage.prev === null
+    this.isLastPage = this.currentPage.next === null
   }
 }
