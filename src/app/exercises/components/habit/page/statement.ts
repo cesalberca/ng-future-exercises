@@ -1,4 +1,4 @@
-export const statement = `# Habit
+export const statement = `# Event
 
 ## Introducción
 
@@ -7,7 +7,7 @@ hábito.
 
 ## Requisitos
 
-- Debe crearse un componente de página de Angular en el fichero habit.component.ts de este directorio
+- Debe crearse un componente de página de Angular en el fichero event.component.ts de este directorio
 - El componente debe poder recibir por parámetro el nombre del evento
 - El componente debe mostrar el nombre que se le pase
 - Por defecto, el nombre del hábito debe ser 'Unkown'
