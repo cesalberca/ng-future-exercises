@@ -1,0 +1,58 @@
+.wrapper {
+  position: relative;
+}
+
+.menu-button {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.menu-button:hover {
+  cursor: pointer;
+}
+
+.options {
+  position: absolute;
+  top: calc(42px + 12px);
+  left: 0;
+  padding: 24px 12px;
+  width: calc(min(90dvw, 400px));
+  max-height: calc(100dvh - 20dvh);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-color);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  list-style: none;
+  border-radius: var(--border-radius);
+}
+
+.option {
+  padding: 8px 0;
+  padding-left: 12px;
+  border-left: 1px solid var(--disabled-color);
+  transition: 200ms ease;
+}
+
+.option > button {
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+}
+
+.option:hover {
+  border-color: var(--accent-color);
+  cursor: pointer;
+  color: var(--accent-color);
+}
+
+.current-option {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}

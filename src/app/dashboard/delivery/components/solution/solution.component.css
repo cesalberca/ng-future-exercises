@@ -29,6 +29,7 @@
   flex-direction: column;
   gap: 24px;
   grid-area: 1 / 2 / 2 / 3;
+  overflow-y: auto;
 }
 
 .user-solution {
@@ -36,4 +37,5 @@
   flex-direction: column;
   gap: 24px;
   grid-area: 2 / 2 / 3 / 3;
+  overflow-y: auto;
 }

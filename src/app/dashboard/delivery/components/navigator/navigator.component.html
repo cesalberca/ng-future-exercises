@@ -1,12 +1,14 @@
 <div class='navigator'>
     <div class="navbar">
-        <select class="selector">
-            @for (page of pagesList; track page.link) {
-                <option>{{page.title}}</option>
-            }
-        </select>
-        <a [class]="isFirstPage ? 'button disabled' : 'button'" [routerLink]="currentPage.prev"><ng-icon name="heroChevronLeft"></ng-icon></a>
-        <a [class]="isLastPage ? 'button disabled' : 'button'" [routerLink]="currentPage.next"><ng-icon name="heroChevronRight"></ng-icon></a>
+        <app-selector 
+        [options]="options" 
+        [currentOption]="currentOption" 
+        (selected)="onChange($event)"
+        />
+        <div class="buttons">
+            <a [class]="isFirstPage ? 'button disabled' : 'button'" [routerLink]="currentPage.prev"><ng-icon name="heroChevronLeft"></ng-icon></a>
+            <a [class]="isLastPage ? 'button disabled' : 'button'" [routerLink]="currentPage.next"><ng-icon name="heroChevronRight"></ng-icon></a>
+        </div>
     </div>
     <div class="content">
         <ng-content></ng-content>
