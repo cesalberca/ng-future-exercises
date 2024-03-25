@@ -4,6 +4,7 @@ import { HelloWorldExercisePage } from './exercises/components/hello-world/page/
 import { FilesDistributionPage } from './exercises/components/files-distribution/page/files-distribution.page'
 import { HabitsListPage } from './exercises/components/habits-list/page/habits-list.page'
 import { IfExercisePage } from './exercises/components/if/page/if-exercise.page'
+import { FormsPage } from './exercises/components/forms/page/forms.page'
 
 export const routes: Routes = [
   {
@@ -30,6 +31,11 @@ export const routes: Routes = [
     title: 'Conditional Rendering',
     path: 'conditional-rendering',
     component: IfExercisePage,
+  },
+  {
+    title: 'Reactive Forms',
+    path: 'reactive-forms',
+    component: FormsPage,
   },
   {
     title: 'Hello World',

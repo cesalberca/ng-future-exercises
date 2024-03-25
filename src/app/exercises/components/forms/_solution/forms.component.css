@@ -1,0 +1,55 @@
+.title {
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+
+.habit-form {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.habit-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.habit-form button {
+  padding: 12px 24px;
+  max-width: max-content;
+  border: 1px solid var(--accent-color);
+  border-radius: var(--border-radius);
+  background: var(--accent-color);
+  color: var(--bg-color);
+  outline: none;
+  transition: 200ms ease;
+}
+
+.habit-form button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.habit {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.date {
+  text-align: end;
+  color: var(--secondary-text-color);
+}
+
+.no-habits {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.error {
+  margin: 8px 0;
+  color: var(--error-color);
+}

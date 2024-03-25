@@ -33,8 +33,14 @@ export const pagesMap: { [key: string]: PageNode } = {
   },
   'conditional-rendering': {
     prev: 'habits-list',
-    next: null,
+    next: 'reactive-forms',
     link: 'conditional-rendering',
     title: 'Ejercicio 5. Conditional Rendering.',
+  },
+  'reactive-forms': {
+    prev: 'conditional-rendering',
+    next: null,
+    link: 'reactive-forms',
+    title: 'Ejercicio 6. Formularios Reactivos.',
   },
 }
