@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 export function getPoweredByTwo() {
   return
 }
