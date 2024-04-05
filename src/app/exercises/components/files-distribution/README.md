@@ -13,3 +13,7 @@ volveremos a hacer el hello world pero, esta vez, separando los ficheros.
 - El texto debe ser azul
 - Los estilos deben ir en un fichero files-distribution.component.css
 - El html debe ir en un fichero files-distribution.component.html
+
+<br/>
+
+> 💡 Usa el Angular CLI para generar los ficheros
