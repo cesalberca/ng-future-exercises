@@ -17,7 +17,7 @@ Las variables CSS se definen utilizando el prefijo `--`, seguido del nombre y el
 }
 ```
 
-Hemos establecido las variables en la pseudo-clase `:root`, la cual hace referencia al elemento raíz del documento, es decir, al elemento `<html>`. De esta forma hemos creado variables globales que pueden ser utilizadas en cualquier parte del documento CSS mediante la función `var()`. Por ejemplo.
+Hemos establecido las variables en la pseudo-clase `:root`, la cual hace referencia al elemento raíz del documento, es decir, al elemento `<html>`. De esta forma hemos creado variables globales que pueden ser utilizadas en cualquier parte del documento CSS mediante la función `var()`. Por ejemplo:
 
 ```css
 .element {
@@ -28,3 +28,5 @@ Hemos establecido las variables en la pseudo-clase `:root`, la cual hace referen
 ```
 
 ## Requisitos
+
+- Añade variables css en la pseudo-clase `:host` del fichero `custom-properties.component.css` y utilízalas para estilar los elementos del fichero `custom-properties.component.html`
