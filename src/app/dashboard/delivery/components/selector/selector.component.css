@@ -44,11 +44,11 @@
   border: none;
   outline: none;
   color: inherit;
+  cursor: pointer;
 }
 
-.option:hover {
+.option > button:hover {
   border-color: var(--accent-color);
-  cursor: pointer;
   color: var(--accent-color);
 }
 
