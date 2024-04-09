@@ -1,4 +1,4 @@
-# Filter
+# Grid
 
 ## Introducción
 

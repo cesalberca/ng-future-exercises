@@ -1,0 +1,32 @@
+:host {
+  --color-primary: rgb(34, 34, 212);
+  --color-secondary: rgb(235, 235, 235);
+  --space-sm: 12px;
+  --space-md: 20px;
+
+  display: block;
+}
+
+h1 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+}
+
+div {
+  background-color: var(--color-secondary);
+  padding: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+p {
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+button {
+  background: none;
+
+  color: var(--color-primary);
+  padding: var(--space-sm);
+  border: 1px solid var(--color-primary);
+}
