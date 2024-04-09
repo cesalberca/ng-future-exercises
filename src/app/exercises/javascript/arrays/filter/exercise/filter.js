@@ -1,4 +1,4 @@
-export function getEvenNumber(numbers) {
+function getEvenNumber(numbers) {
   const result = numbers.filter(number => number % 2 == 0)
   return result
 }
