@@ -2,7 +2,7 @@
 
 ## Introducción
 
-La proyección de contenido es un patrón en el que se inserta (proyecta) el contenido que se quiere utilizar dentro de otro componente. Por ejemplo, puedes tener un componente `Card`que acepte contenido proporcionado por otro componente.
+La proyección de contenido es un patrón en el que se inserta (proyecta) el contenido que se quiere utilizar dentro de otro componente. Por ejemplo, puedes tener un componente `Card` que acepte contenido proporcionado por otro componente.
 
 #### Single-slot content projection
 

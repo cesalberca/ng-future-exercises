@@ -50,7 +50,7 @@ export const pagesMap: { [key: string]: PageNode } = {
     title: 'Ejercicio 7. Content Projection (ng-content)',
   },
   'custom-properties': {
-    prev: 'conditional-rendering',
+    prev: 'content-projection',
     next: null,
     link: 'custom-properties',
     title: 'Ejercicio 8. Custom Properties.',
