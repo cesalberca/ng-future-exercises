@@ -26,15 +26,8 @@ class Dog extends Animal {
 const dog = new Dog('Tobby')
 dog.move()
 
-class Person extends Animal {
-  constructor(name: string) {
-    super(name)
-  }
-
-  override move(distance = 5) {
-    console.log(this.name + ' moves...')
-    super.move(distance)
-  }
+type Person = {
+  age: number
 }
 
 class ClassWithPrivateMethodsAndProperties {
