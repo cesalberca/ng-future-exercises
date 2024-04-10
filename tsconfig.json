@@ -13,8 +13,7 @@
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,
-    "noUnusedParameters": true,
-    "noUnusedLocals": true,
+
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,

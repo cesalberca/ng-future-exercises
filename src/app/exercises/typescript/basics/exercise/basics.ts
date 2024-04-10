@@ -1,5 +1,5 @@
 // @ts-nocheck
-const foo: any = 'foo'
+const foo: string = 'foo'
 const bar: any = 1
 const baz: any = true
 const qux: any[] = ['bar', 'baz', 'qux']
