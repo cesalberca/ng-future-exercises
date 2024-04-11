@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, output } from '@angular/core'
 
 @Component({
   selector: 'app-output-child-solution',
@@ -7,4 +7,17 @@ import { Component } from '@angular/core'
   standalone: true,
   imports: [],
 })
-export class OutputChildSolutionComponent {}
+export class OutputChildSolutionComponent {
+  value = 0
+  valueChangedEvent = output<number>()
+
+  increment() {
+    this.value++
+    this.valueChangedEvent.emit(this.value)
+  }
+
+  decrease() {
+    this.value--
+    this.valueChangedEvent.emit(this.value)
+  }
+}

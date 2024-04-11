@@ -8,4 +8,10 @@ import { OutputChildSolutionComponent } from './output-child/output-child.compon
   standalone: true,
   imports: [OutputChildSolutionComponent],
 })
-export class OutputParentSolutionComponent {}
+export class OutputParentSolutionComponent {
+  childValue: number | undefined = undefined
+
+  handleValueChange(event: number) {
+    this.childValue = event
+  }
+}

@@ -23,8 +23,10 @@
 }
 
 .markdown code {
-  background-color: #dbdbdb4d;
-  color: #1669bb;
+  background-color: #dbdbdba2;
+  color: #135da7;
+  padding: 1px 4px;
+  border-radius: 4px;
 }
 
 .markdown pre code {

@@ -20,4 +20,8 @@ updateName(value: string) {
 <app-my-comp (onNameChange)="handleNameChange($event)" />
 ```
 
+Angular provee la variable `$event`, que contiene la información emitida por el hijo.
+
 ## Requisitos
+
+- Completa los componentes de la carpeta `exercise` para que el componente padre reciba un evento del componente hijo.
