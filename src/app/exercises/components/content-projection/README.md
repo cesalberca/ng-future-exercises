@@ -21,5 +21,5 @@ Para usar el "single-slot content projection":
 
 ## Requisitos
 
-- Crea un componente que tenga un elemento `<ng-content>`
-- Úsalo 2 veces en el componente `exercise.component.ts` para propagar contenido distinto.
+- En la carpeta `exercise` completa el componente `component-with-ng-content` para que tenga el html que quiera que sea común cada vez que utilices el componente y añade un elemento `ng-content` donde quieras proyectar contenido extra.
+- Úsalo 2 veces en el componente `content-projection.component.ts` de la carpeta `exercise` para propagar contenido distinto.

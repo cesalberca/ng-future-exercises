@@ -3,7 +3,6 @@
   display: flex;
   gap: 12px;
   flex-direction: column;
-  height: calc(100dvh - 48px * 2);
 }
 
 .navbar {
