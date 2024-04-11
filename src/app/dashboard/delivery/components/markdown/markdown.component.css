@@ -21,3 +21,13 @@
   gap: 4px;
   color: var(--text-color);
 }
+
+.markdown code {
+  background-color: #dbdbdb4d;
+  color: #1669bb;
+}
+
+.markdown pre code {
+  background-color: inherit;
+  color: inherit;
+}
