@@ -11,7 +11,7 @@ import { MdComponent } from '../../../../dashboard/delivery/components/markdown/
     <app-solution-component>
       <app-markdown statement src="assets/app/exercises/components/habit/README.md" />
       <app-habit-solution solution habit="Meditar" />
-      <app-habit user-solution />
+      <app-habit user-solution name="Meditar" />
     </app-solution-component>
   `,
   imports: [SolutionComponent, HabitSolutionComponent, HabitComponent, MdComponent],
