@@ -15,9 +15,7 @@
       "schematics": {
         "@schematics/angular:component": {
           "displayBlock": true,
-          "changeDetection": "OnPush",
-          "inlineTemplate": true,
-          "inlineStyle": true
+          "changeDetection": "OnPush"
         }
       },
       "root": "",
@@ -33,7 +31,7 @@
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico", 
+              "src/favicon.ico",
               "src/assets",
               {
                 "glob": "**/*.md",
