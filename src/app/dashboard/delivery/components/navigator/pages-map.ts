@@ -45,14 +45,20 @@ export const pagesMap: { [key: string]: PageNode } = {
   },
   'content-projection': {
     prev: 'reactive-forms',
-    next: 'custom-properties',
+    next: 'content-projection-multi',
     link: 'content-projection',
     title: 'Ejercicio 7. Content Projection (ng-content)',
   },
-  'custom-properties': {
+  'content-projection-multi': {
     prev: 'content-projection',
+    next: 'custom-properties',
+    link: 'content-projection-multi',
+    title: 'Ejercicio 8. Multi-Slot Content Projection',
+  },
+  'custom-properties': {
+    prev: 'content-projection-multi',
     next: null,
     link: 'custom-properties',
-    title: 'Ejercicio 8. Custom Properties.',
+    title: 'Ejercicio 9. Custom Properties.',
   },
 }
