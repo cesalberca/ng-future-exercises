@@ -1,0 +1,11 @@
+:host {
+  display: block;
+}
+
+.begins-with-letter-a {
+  color: red;
+}
+
+.long-text {
+  background-color: yellow;
+}

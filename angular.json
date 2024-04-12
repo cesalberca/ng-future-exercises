@@ -3,9 +3,7 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
-    "schematicCollections": [
-      "@angular-eslint/schematics"
-    ],
+    "schematicCollections": ["@angular-eslint/schematics"],
     "analytics": false
   },
   "newProjectRoot": "projects",
@@ -16,8 +14,7 @@
         "@schematics/angular:component": {
           "displayBlock": true,
           "changeDetection": "OnPush",
-          "inlineTemplate": true,
-          "inlineStyle": true
+          "skipTests": true
         }
       },
       "root": "",
@@ -33,7 +30,7 @@
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico", 
+              "src/favicon.ico",
               "src/assets",
               {
                 "glob": "**/*.md",
@@ -41,14 +38,12 @@
                 "output": "./assets"
               }
             ],
-            "styles": [
-              "src/styles.css",
-              "node_modules/prismjs/themes/prism-okaidia.css"
-            ],
+            "styles": ["src/styles.css", "node_modules/prismjs/themes/prism-okaidia.css"],
             "scripts": [
               "node_modules/prismjs/prism.js",
               "node_modules/prismjs/components/prism-css.min.js",
-              "node_modules/prismjs/components/prism-css-extras.min.js"
+              "node_modules/prismjs/components/prism-css-extras.min.js",
+              "node_modules/prismjs/components/prism-typescript.min.js"
             ]
           },
           "configurations": {
