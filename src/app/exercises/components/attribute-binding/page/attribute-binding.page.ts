@@ -10,12 +10,12 @@ import { AttributeBindingComponent } from '../attribute-binding/attribute-bindin
   template: `
     <app-solution-component>
       <app-markdown statement src="assets/app/exercises/components/attribute-binding/README.md" />
-      <app-attribute-binding-solution solution [text]="text" />
-      <app-attribute-binding user-solution [text]="text" />
+      <app-attribute-binding-solution solution [text]="result" />
+      <app-attribute-binding user-solution [text]="result" />
     </app-solution-component>
   `,
   imports: [SolutionComponent, MdComponent, AttributeBindingSolutionComponent, AttributeBindingComponent],
 })
 export class AttributeBindingPage {
-  text = 'Cadena de texto'
+  result = 'ACad'
 }
