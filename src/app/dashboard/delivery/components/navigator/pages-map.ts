@@ -63,14 +63,20 @@ export const pagesMap: { [key: string]: PageNode } = {
   },
   output: {
     prev: 'content-projection-multi',
-    next: 'custom-properties',
+    next: 'signals',
     link: 'output',
     title: 'Ejercicio 10. Output',
+  },
+  signals: {
+    prev: 'output',
+    next: 'custom-properties',
+    link: 'signals',
+    title: 'Ejercicio 11. Signals',
   },
   'custom-properties': {
     prev: 'output',
     next: null,
     link: 'custom-properties',
-    title: 'Ejercicio 11. Custom Properties.',
+    title: 'Ejercicio 12. Custom Properties.',
   },
 }

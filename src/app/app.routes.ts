@@ -10,6 +10,7 @@ import { ContentProjectionPage } from './exercises/components/content-projection
 import { ContentProjectionMultiPage } from './exercises/components/content-projection-multi/page/content-projection-multi.page'
 import { AttributeBindingPage } from './exercises/components/attribute-binding/page/attribute-binding.page'
 import { OutputPage } from './exercises/components/output/page/output-parent.page'
+import { SignalsPage } from './exercises/components/signals/page/signals.page'
 
 export const routes: Routes = [
   {
@@ -61,6 +62,11 @@ export const routes: Routes = [
     title: 'Output',
     path: 'output',
     component: OutputPage,
+  },
+  {
+    title: 'Signals (writable signals)',
+    path: 'signals',
+    component: SignalsPage,
   },
   {
     title: 'Custom Properties',
