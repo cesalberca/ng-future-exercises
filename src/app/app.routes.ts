@@ -9,6 +9,7 @@ import { CustomPropertiesPage } from './exercises/css/custom-properties/page/cus
 import { ContentProjectionPage } from './exercises/components/content-projection/page/content-projection.page'
 import { ContentProjectionMultiPage } from './exercises/components/content-projection-multi/page/content-projection-multi.page'
 import { AttributeBindingPage } from './exercises/components/attribute-binding/page/attribute-binding.page'
+import { OutputPage } from './exercises/components/output/page/output-parent.page'
 
 export const routes: Routes = [
   {
@@ -55,6 +56,11 @@ export const routes: Routes = [
     title: 'Content Projection',
     path: 'content-projection-multi',
     component: ContentProjectionMultiPage,
+  },
+  {
+    title: 'Output',
+    path: 'output',
+    component: OutputPage,
   },
   {
     title: 'Custom Properties',
