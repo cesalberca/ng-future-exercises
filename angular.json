@@ -3,9 +3,7 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
-    "schematicCollections": [
-      "@angular-eslint/schematics"
-    ],
+    "schematicCollections": ["@angular-eslint/schematics"],
     "analytics": false
   },
   "newProjectRoot": "projects",
@@ -15,7 +13,8 @@
       "schematics": {
         "@schematics/angular:component": {
           "displayBlock": true,
-          "changeDetection": "OnPush"
+          "changeDetection": "OnPush",
+          "skipTests": true
         }
       },
       "root": "",
@@ -39,10 +38,7 @@
                 "output": "./assets"
               }
             ],
-            "styles": [
-              "src/styles.css",
-              "node_modules/prismjs/themes/prism-okaidia.css"
-            ],
+            "styles": ["src/styles.css", "node_modules/prismjs/themes/prism-okaidia.css"],
             "scripts": [
               "node_modules/prismjs/prism.js",
               "node_modules/prismjs/components/prism-css.min.js",
