@@ -17,5 +17,5 @@ import { AttributeBindingComponent } from '../attribute-binding/attribute-bindin
   imports: [SolutionComponent, MdComponent, AttributeBindingSolutionComponent, AttributeBindingComponent],
 })
 export class AttributeBindingPage {
-  result = 'ACad'
+  result = 'ACademia'
 }

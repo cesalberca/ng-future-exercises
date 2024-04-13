@@ -1,3 +1,11 @@
 :host {
   display: block;
 }
+
+.start-w-a {
+  color: var(--error-color);
+}
+
+.l-ge-5 {
+  background-color: var(--bg-secondary-color);
+}
