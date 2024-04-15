@@ -39,12 +39,18 @@ export const pagesMap: { [key: string]: PageNode } = {
   },
   'conditional-rendering': {
     prev: 'habits-list',
-    next: 'reactive-forms',
+    next: 'pipes',
     link: 'conditional-rendering',
     title: 'Conditional Rendering.',
   },
-  'reactive-forms': {
+  pipes: {
     prev: 'conditional-rendering',
+    next: 'reactive-forms',
+    link: 'pipes',
+    title: 'Pipes',
+  },
+  'reactive-forms': {
+    prev: 'pipes',
     next: 'content-projection',
     link: 'reactive-forms',
     title: 'Formularios Reactivos.',

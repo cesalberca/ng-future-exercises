@@ -14,6 +14,7 @@ import { SignalsPage } from './exercises/components/signals/page/signals.page'
 import { SignalsComputedPage } from './exercises/components/signals-computed/page/signals-computed.page'
 import { SignalsEffectPage } from './exercises/components/signals-effect/page/signals-effect.page'
 import { HttpClientPage } from './exercises/components/http-client/page/http-client.page'
+import { PipePage } from './exercises/components/pipe/page/pipe.page'
 
 export const routes: Routes = [
   {
@@ -90,6 +91,11 @@ export const routes: Routes = [
     title: 'Http Client',
     path: 'http-client',
     component: HttpClientPage,
+  },
+  {
+    title: 'Pipes',
+    path: 'pipes',
+    component: PipePage,
   },
   {
     title: 'Hello World',
