@@ -4,15 +4,15 @@
     Nombre
     <input type="text" formControlName="name" />
   </label>
-  @if (errorMessage()) {
-    <p class="error">{{ errorMessage() }}</p>
+  @if (errorMessage) {
+    <p class="error">{{ errorMessage }}</p>
   }
   <button type="submit">Crear</button>
 </form>
 <h3 class="title">Tus Hábitos</h3>
 <ul class="habits-list">
-  @if (habits().length > 0) {
-    @for (habit of habits(); track habit) {
+  @if (habits.length > 0) {
+    @for (habit of habits; track habit) {
       <li class="habit">
         {{ habit.habit }}<span class="date">{{ habit.date }}</span>
       </li>
