@@ -1,0 +1,18 @@
+.my-button {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.habits-w {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.margins {
+  margin: 10px;
+}

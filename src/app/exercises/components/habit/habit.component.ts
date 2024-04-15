@@ -9,4 +9,5 @@ import { Component, input } from '@angular/core'
 })
 export class HabitComponent {
   habit_name = input.required<string>()
+  habit_date = input<string>()
 }

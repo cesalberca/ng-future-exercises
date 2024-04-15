@@ -1,0 +1,26 @@
+<h1 class="margins">Crear Hábito</h1>
+<form class="margins" [formGroup]="habit_form" (ngSubmit)="onSubmit()">
+    <p class="margins">Nombre:
+    <input type="text" formControlName="habit_name" />
+    </p>
+    <button class="my-button margins" type="submit">Crear</button>
+    @if(habit_name.invalid){
+        @if (habit_name.errors?.['required']) {
+            <div>Required</div>
+        }
+        <div>Error</div>
+    }
+</form>
+<div>
+    <h2 class="margins">Tus Hábitos</h2>
+</div>
+
+@if (habit_list.length > 0) {
+    <div class="habits-w">
+        @for (habit of habit_list; track habit.name) {
+            <app-habit habit_name={{habit.name}} habit_date={{format_date(habit.date)}}></app-habit>
+        }
+    </div>
+} @else {
+    <p> No hay hábitos creados </p>
+}
