@@ -1,0 +1,14 @@
+<nav>
+  <li>
+    <a routerLink="solution/page" routerLinkActive="active" ariaCurrentWhenActive="page">Solution Page Link</a>
+  </li>
+  <li>
+    <a routerLink="solution/page-2" routerLinkActive="active" ariaCurrentWhenActive="page">Link a page-2 (no existe la ruta)</a>
+  </li>
+</nav>
+<button (click)="onClick()">Solution Nested Page Button</button>
+
+<h3>Nested Page will render here:</h3>
+<div>
+  <router-outlet></router-outlet>
+</div>

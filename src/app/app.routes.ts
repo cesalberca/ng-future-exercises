@@ -15,6 +15,8 @@ import { SignalsComputedPage } from './exercises/components/signals-computed/pag
 import { SignalsEffectPage } from './exercises/components/signals-effect/page/signals-effect.page'
 import { HttpClientPage } from './exercises/components/http-client/page/http-client.page'
 import { PipePage } from './exercises/components/pipe/page/pipe.page'
+import { RouterPage } from './exercises/components/router/page/router.page'
+import { routesOfRouterExercise } from './exercises/components/router/routes'
 
 export const routes: Routes = [
   {
@@ -96,6 +98,12 @@ export const routes: Routes = [
     title: 'Pipes',
     path: 'pipes',
     component: PipePage,
+  },
+  {
+    title: 'Router',
+    path: 'router',
+    component: RouterPage,
+    children: routesOfRouterExercise,
   },
   {
     title: 'Hello World',

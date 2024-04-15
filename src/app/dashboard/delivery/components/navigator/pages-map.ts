@@ -55,6 +55,12 @@ export const pagesMap: { [key: string]: PageNode } = {
     link: 'reactive-forms',
     title: 'Formularios Reactivos.',
   },
+  router: {
+    prev: 'reactive-forms',
+    next: 'http-client',
+    link: 'router',
+    title: 'Router',
+  },
   'http-client': {
     prev: 'reactive-forms',
     next: 'content-projection',
