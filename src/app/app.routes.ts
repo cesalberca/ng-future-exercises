@@ -12,6 +12,7 @@ import { AttributeBindingPage } from './exercises/components/attribute-binding/p
 import { OutputPage } from './exercises/components/output/page/output-parent.page'
 import { SignalsPage } from './exercises/components/signals/page/signals.page'
 import { SignalsComputedPage } from './exercises/components/signals-computed/page/signals-computed.page'
+import { SignalsEffectPage } from './exercises/components/signals-effect/page/signals-effect.page'
 
 export const routes: Routes = [
   {
@@ -73,6 +74,11 @@ export const routes: Routes = [
     title: 'Computed Signals (read-only signals)',
     path: 'signals-computed',
     component: SignalsComputedPage,
+  },
+  {
+    title: 'Signals Effect',
+    path: 'signals-effect',
+    component: SignalsEffectPage,
   },
   {
     title: 'Custom Properties',
