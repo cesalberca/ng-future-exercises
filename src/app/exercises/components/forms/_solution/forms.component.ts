@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core'
+import { Component } from '@angular/core'
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms'
 
 @Component({
@@ -9,22 +9,22 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
   imports: [ReactiveFormsModule],
 })
 export class FormsSolutionComponent {
-  errorMessage = signal<string>('')
-  habits = signal<{ habit: string; date: Date }[]>([])
+  errorMessage = ''
+  habits: { habit: string; date: Date }[] = []
   habitForm = new FormGroup({
     name: new FormControl('', [Validators.required, Validators.minLength(2)]),
   })
   handleSubmit() {
     if (this.habitForm.status === 'INVALID') {
-      this.errorMessage.set('El nombre del hábito debe tener, al menos, 2 letras')
+      this.errorMessage = 'El nombre del hábito debe tener, al menos, 2 letras'
       return
     }
-    this.errorMessage.set('')
+    this.errorMessage = ''
     const newHabit: { habit: string; date: Date } = {
       habit: this.habitForm.value.name!,
       date: new Date(),
     }
-    this.habits.update(prev => [...prev, newHabit])
+    this.habits = [...this.habits, newHabit]
     this.habitForm.reset()
   }
 }
