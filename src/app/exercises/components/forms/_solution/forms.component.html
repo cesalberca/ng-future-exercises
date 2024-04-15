@@ -14,7 +14,7 @@
   @if (habits.length > 0) {
     @for (habit of habits; track habit) {
       <li class="habit">
-        {{ habit.habit }}<span class="date">{{ habit.date }}</span>
+        {{ habit.habit }}<span class="date">{{ format(habit.date) }}</span>
       </li>
     }
   } @else {
