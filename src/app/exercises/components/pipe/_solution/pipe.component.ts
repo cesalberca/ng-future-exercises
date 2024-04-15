@@ -8,8 +8,8 @@ import { IsTodayPipe } from './is-today.pipe'
   template: `
     <div>{{ today | date }}</div>
     <div>{{ today | date: 'yyyy-mm-dd' }}</div>
-    <div>{{ today | IsTodayPipe }}</div>
-    <div>{{ yesterday | IsTodayPipe }}</div>
+    <div>{{ today | isToday }}</div>
+    <div>{{ yesterday | isToday }}</div>
   `,
   standalone: true,
   imports: [DatePipe, IsTodayPipe],

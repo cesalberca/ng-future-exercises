@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core'
 
 @Pipe({
-  name: 'today',
+  name: 'isToday',
   standalone: true,
 })
 export class IsTodayPipe implements PipeTransform {

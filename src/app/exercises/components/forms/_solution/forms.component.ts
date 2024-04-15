@@ -1,5 +1,9 @@
 import { Component } from '@angular/core'
-import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms'
+import { FormControl, FormGroup, NonNullableFormBuilder, ReactiveFormsModule, Validators } from '@angular/forms'
+
+interface Model {
+  name: FormControl<string>
+}
 
 @Component({
   selector: 'app-forms-solution',
@@ -11,9 +15,14 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 export class FormsSolutionComponent {
   errorMessage = ''
   habits: { habit: string; date: Date }[] = []
-  habitForm = new FormGroup({
-    name: new FormControl('', [Validators.required, Validators.minLength(2)]),
+  habitForm = new FormGroup<Model>({
+    name: new FormControl('', { validators: [Validators.required, Validators.minLength(2)], nonNullable: true }),
   })
+  habitFormBuilder = this.formBuilder.group({
+    name: ['', Validators.required, Validators.minLength(2)],
+  })
+
+  constructor(private readonly formBuilder: NonNullableFormBuilder) {}
 
   format(date: Date) {
     return new Intl.DateTimeFormat('es', {
