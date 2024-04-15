@@ -12,6 +12,3 @@ Vamos a utilizar todo lo aprendido para crear un formulario que pida el nombre d
 - La fecha de edición debe tener formato: short-month DD, YYYY
 - Deben mostrarse todos los hábitos creados con el nombre y la fecha de creación
 - Si no hay hábitos creados, se mostrará un texto "No hay hábitos creados"
-- Debe crearse un componente de página de Angular en el fichero forms.component.ts de este directorio
-- El componente debe usar un fichero .html para el template
-- El componente debe usar un fichero .css para los estilos

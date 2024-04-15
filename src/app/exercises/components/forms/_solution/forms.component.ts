@@ -14,6 +14,15 @@ export class FormsSolutionComponent {
   habitForm = new FormGroup({
     name: new FormControl('', [Validators.required, Validators.minLength(2)]),
   })
+
+  format(date: Date) {
+    return new Intl.DateTimeFormat('es', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric',
+    }).format(date)
+  }
+
   handleSubmit() {
     if (this.habitForm.status === 'INVALID') {
       this.errorMessage = 'El nombre del hábito debe tener, al menos, 2 letras'
