@@ -10,8 +10,6 @@ Vamos a utilizar todo lo aprendido para crear un formulario que pida el nombre d
 - El formulario tiene que tener verificación para asegurar de que el nombre del hábito tiene, al menos, dos letras
 - Se debe mostrar el hábito y la fecha cuando fue creado
 - La fecha de edición debe tener formato: short-month DD, YYYY
-- El formato de la fecha debe venir dado por un custom pipe
-- Se debe crear un pipe para la fecha de edición
 - Deben mostrarse todos los hábitos creados con el nombre y la fecha de creación
 - Si no hay hábitos creados, se mostrará un texto "No hay hábitos creados"
 - Debe crearse un componente de página de Angular en el fichero forms.component.ts de este directorio
