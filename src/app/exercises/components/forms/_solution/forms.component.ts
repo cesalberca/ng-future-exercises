@@ -1,21 +1,16 @@
 import { Component, signal } from '@angular/core'
-import { ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms'
-import { LastTimeEdited } from './last-time-edited.pipe'
-import { provideIcons, NgIconComponent } from '@ng-icons/core'
-import { heroShieldExclamation } from '@ng-icons/heroicons/outline'
-import { DateTime } from 'luxon'
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms'
 
 @Component({
   selector: 'app-forms-solution',
   standalone: true,
   templateUrl: './forms.component.html',
   styleUrl: './forms.component.css',
-  imports: [ReactiveFormsModule, LastTimeEdited, NgIconComponent],
-  viewProviders: [provideIcons({ heroShieldExclamation })],
+  imports: [ReactiveFormsModule],
 })
 export class FormsSolutionComponent {
   errorMessage = signal<string>('')
-  habits = signal<{ habit: string; date: DateTime }[]>([])
+  habits = signal<{ habit: string; date: Date }[]>([])
   habitForm = new FormGroup({
     name: new FormControl('', [Validators.required, Validators.minLength(2)]),
   })
@@ -25,9 +20,9 @@ export class FormsSolutionComponent {
       return
     }
     this.errorMessage.set('')
-    const newHabit: { habit: string; date: DateTime } = {
+    const newHabit: { habit: string; date: Date } = {
       habit: this.habitForm.value.name!,
-      date: DateTime.now(),
+      date: new Date(),
     }
     this.habits.update(prev => [...prev, newHabit])
     this.habitForm.reset()
