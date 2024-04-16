@@ -1,7 +1,6 @@
 import { Component } from '@angular/core'
 import { SolutionComponent } from '../../../../dashboard/delivery/components/solution/solution.component'
 import { MdComponent } from '../../../../dashboard/delivery/components/markdown/markdown.component'
-import { HttpClientComponent } from '../http-client.component'
 import { HttpClient } from '@angular/common/http'
 import { lastValueFrom } from 'rxjs'
 
@@ -26,7 +25,7 @@ interface Post {
         <p>{{ post.title }}</p>
       }
     </div>`,
-  imports: [SolutionComponent, MdComponent, HttpClientComponent],
+  imports: [SolutionComponent, MdComponent],
 })
 export class HttpClientSolutionComponent {
   posts: Post[] = []
