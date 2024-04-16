@@ -1,8 +1,8 @@
-import { ChangeDetectionStrategy, Component, ContentChild, DoCheck } from '@angular/core'
-import { RouterLink, Router } from '@angular/router'
+import { ChangeDetectionStrategy, Component, DoCheck } from '@angular/core'
+import { Router, RouterLink } from '@angular/router'
 import { Location } from '@angular/common'
 import { NgIconComponent, provideIcons } from '@ng-icons/core'
-import { heroChevronRight, heroChevronLeft } from '@ng-icons/heroicons/outline'
+import { heroChevronLeft, heroChevronRight } from '@ng-icons/heroicons/outline'
 import { pagesMap } from './pages-map'
 import { SelectorComponent } from '../selector/selector.component'
 import { Option } from '../../../domain/option'
@@ -17,7 +17,6 @@ import { Option } from '../../../domain/option'
   viewProviders: [provideIcons({ heroChevronLeft, heroChevronRight })],
 })
 export class NavigatorComponent implements DoCheck {
-  @ContentChild(NavigatorComponent, { static: true }) navigatorComponent!: NavigatorComponent
   pagesList = Object.values(pagesMap).splice(1)
   options: Option[] = this.pagesList.map(page => ({ id: page.link, name: page.title }))
   currentPage = this.getCurrentPage()
@@ -46,7 +45,7 @@ export class NavigatorComponent implements DoCheck {
     return { id: this.currentPage.link, name: this.currentPage.title }
   }
 
-  onChange = (option: Option) => {
+  onChange(option: Option) {
     this.router.navigate([option.id])
   }
 }
