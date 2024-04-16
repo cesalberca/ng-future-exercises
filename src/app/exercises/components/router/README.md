@@ -42,10 +42,10 @@ constructor(private readonly router: Router) {}
 - Añade 1 link nuevo que contenga un query params:
 
 ```html
-<a routerLink="solution/page" [queryParams]="{ title: 'Title 1'}">Solution Page (title 1)</a>
+<a routerLink="solution/page" [queryParams]="{ title: 'Title 1'}">Solution Page with query param: title 1</a>
 ```
 
-- En el componente al que vas a redirigir añade como campos el siguiente código con tal de escuchar cambios sobre el queryParam title:
+- En el componente al que vas a redirigir añade como campos el siguiente código con tal de escuchar cambios sobre el queryParam title
 
 ```typescript
 queryParams = toSignal(this.route.queryParams, { initialValue: { title: '' } })
@@ -53,3 +53,21 @@ title = computed(() => this.queryParams().title)
 ```
 
 - Muestra el valor del parámetro en pantalla a través del html.
+
+### Route Params
+
+- Crea un nuevo componente para poder redirigirte a el.
+- En el fichero `router.ts` añade el `path: 'page/:id'` con el componente que acabas de crear.
+- En el componente al que vas a redirigir añade como campos el siguiente código con tal de escuchar cambios sobre route param:
+
+```typescript
+routeParams = toSignal(this.route.params, { initialValue: { id: '' } })
+id = computed(() => this.routeParams().id)
+```
+
+- Muestra el valor del parámetro en pantalla a través del html.
+- En el componente padre añade un nuevo link que contenga el route param:
+
+```html
+<a [routerLink]="['solution/page', '1']">Solution Page with route param id: 1</a>
+```
