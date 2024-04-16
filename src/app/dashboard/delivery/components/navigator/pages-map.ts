@@ -75,12 +75,18 @@ export const pagesMap: { [key: string]: PageNode } = {
   },
   'content-projection-multi': {
     prev: 'content-projection',
-    next: 'output',
+    next: 'defer',
     link: 'content-projection-multi',
     title: 'Multi-Slot Content Projection',
   },
-  output: {
+  defer: {
     prev: 'content-projection-multi',
+    next: 'output',
+    link: 'defer',
+    title: 'Deferrable views',
+  },
+  output: {
+    prev: 'defer',
     next: 'signals',
     link: 'output',
     title: 'Output',

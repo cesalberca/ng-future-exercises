@@ -17,6 +17,7 @@ import { HttpClientPage } from './exercises/components/http-client/page/http-cli
 import { PipePage } from './exercises/components/pipe/page/pipe.page'
 import { RouterPage } from './exercises/components/router/page/router.page'
 import { routesOfRouterExercise } from './exercises/components/router/routes'
+import { DeferPage } from './exercises/components/deferrable-views/page/defer.page'
 
 export const routes: Routes = [
   {
@@ -104,6 +105,11 @@ export const routes: Routes = [
     path: 'router',
     component: RouterPage,
     children: routesOfRouterExercise,
+  },
+  {
+    title: 'Deferrable View',
+    path: 'defer',
+    component: DeferPage,
   },
   {
     title: 'Hello World',
