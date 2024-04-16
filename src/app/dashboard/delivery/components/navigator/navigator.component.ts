@@ -20,14 +20,10 @@ export class NavigatorComponent {
   @ContentChild(NavigatorComponent, { static: true }) navigatorComponent!: NavigatorComponent
   pagesList = Object.values(pagesMap).splice(1)
   options: Option[] = this.pagesList.map(page => ({ id: page.link, name: page.title }))
-  currentPage = pagesMap[this.location.path().replace('/', '')]
-  currentOption: Option = { id: this.currentPage.link, name: this.currentPage.title }
+  currentPage = this.getCurrentPage()
+  currentOption: Option = this.getCurrentOption()
   isFirstPage = this.currentPage.prev === null
   isLastPage = this.currentPage.next === null
-
-  onChange = (option: Option) => {
-    this.router.navigate([option.id])
-  }
 
   constructor(
     private location: Location,
@@ -35,10 +31,22 @@ export class NavigatorComponent {
   ) {}
 
   ngDoCheck() {
-    const pathname = this.location.path().split('/')[1]
-    this.currentPage = pagesMap[pathname]
-    this.currentOption = { id: this.currentPage.link, name: this.currentPage.title }
+    this.currentPage = this.getCurrentPage()
+    this.currentOption = this.getCurrentOption()
     this.isFirstPage = this.currentPage.prev === null
     this.isLastPage = this.currentPage.next === null
+  }
+
+  getCurrentPage() {
+    const pathname = this.location.path().split('/')[1]
+    return pagesMap[pathname]
+  }
+
+  getCurrentOption() {
+    return { id: this.currentPage.link, name: this.currentPage.title }
+  }
+
+  onChange = (option: Option) => {
+    this.router.navigate([option.id])
   }
 }
