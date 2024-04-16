@@ -1,5 +1,7 @@
-@defer (on viewport) {
+@defer (on hover) {
   <app-large-component />
-} @placeholder (minimum 1000ms) {
-  <p>Placeholder content (1 segundos)</p>
+} @loading (minimum 2s) {
+  <p>Loading...</p>
+} @placeholder {
+  <p>Pasa el cursor por encima</p>
 }
