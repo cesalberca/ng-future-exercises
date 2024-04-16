@@ -62,13 +62,13 @@ export const pagesMap: { [key: string]: PageNode } = {
     title: 'Router',
   },
   'http-client': {
-    prev: 'reactive-forms',
+    prev: 'router',
     next: 'content-projection',
     link: 'http-client',
     title: 'Http Client',
   },
   'content-projection': {
-    prev: 'reactive-forms',
+    prev: 'http-client',
     next: 'content-projection-multi',
     link: 'content-projection',
     title: 'Content Projection (ng-content)',

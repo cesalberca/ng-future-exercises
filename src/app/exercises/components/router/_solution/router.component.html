@@ -1,9 +1,15 @@
 <nav>
   <li>
-    <a routerLink="solution/page" routerLinkActive="active" ariaCurrentWhenActive="page">Solution Page Link</a>
+    <a routerLink="solution/page">Solution Page Link</a>
   </li>
   <li>
-    <a routerLink="solution/page-2" routerLinkActive="active" ariaCurrentWhenActive="page">Link a page-2 (no existe la ruta)</a>
+    <a routerLink="solution/page" [queryParams]="{ title: 'Title 1'}">Solution Page (title 1)</a>
+  </li>
+  <li>
+    <a routerLink="solution/page" [queryParams]="{ title: 'Title 2'}">Solution Page (title 2)</a>
+  </li>
+  <li>
+    <a routerLink="solution/page-2" >Link a page-2 (no existe la ruta)</a>
   </li>
 </nav>
 <button (click)="onClick()">Solution Nested Page Button</button>
