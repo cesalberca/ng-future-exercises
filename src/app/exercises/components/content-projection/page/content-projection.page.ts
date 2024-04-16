@@ -10,7 +10,7 @@ import { ContentProjectionComponent } from '../exercise/content-projection.compo
   standalone: true,
   template: `
     <app-solution-component>
-      <app-markdown statement src="assets/app/exercises/components/content-projection/README.md" />
+      <app-markdown src="assets/app/exercises/components/content-projection/README.md" />
       <app-content-projection-solution solution />
       <app-content-projection user-solution />
     </app-solution-component>

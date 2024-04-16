@@ -10,7 +10,7 @@ import { SignalsEffectComponent } from '../exercise/signals-effect.component'
   standalone: true,
   template: `
     <app-solution-component>
-      <app-markdown statement src="assets/app/exercises/components/signals-effect/README.md" />
+      <app-markdown src="assets/app/exercises/components/signals-effect/README.md" />
       <app-signals-effect-solution solution />
       <app-signals-effect user-solution />
     </app-solution-component>

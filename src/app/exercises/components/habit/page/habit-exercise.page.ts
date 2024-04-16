@@ -9,7 +9,7 @@ import { MdComponent } from '../../../../dashboard/delivery/components/markdown/
   standalone: true,
   template: `
     <app-solution-component>
-      <app-markdown statement src="assets/app/exercises/components/habit/README.md" />
+      <app-markdown src="assets/app/exercises/components/habit/README.md" />
       <app-habit-solution solution habit="Meditar" />
       <app-habit user-solution />
     </app-solution-component>

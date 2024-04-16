@@ -9,7 +9,7 @@ import { FilesDistributionComponent } from '../files-distribution.component'
   standalone: true,
   template: `
     <app-solution-component>
-      <app-markdown statement src="assets/app/exercises/components/files-distribution/README.md" />
+      <app-markdown src="assets/app/exercises/components/files-distribution/README.md" />
       <app-files-distribution-solution solution />
       <app-files-distribution user-solution />
     </app-solution-component>

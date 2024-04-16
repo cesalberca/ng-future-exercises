@@ -9,7 +9,7 @@ import { HabitsListComponent } from '../habits-list.component'
   standalone: true,
   template: `
     <app-solution-component>
-      <app-markdown statement src="assets/app/exercises/components/habits-list/README.md" />
+      <app-markdown src="assets/app/exercises/components/habits-list/README.md" />
       <app-habits-list-solution solution />
       <app-habits-list user-solution />
     </app-solution-component>

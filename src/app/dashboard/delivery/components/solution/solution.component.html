@@ -1,13 +1,13 @@
 <div class="wrapper">
-    <div class="statement" >
-        <ng-content select="[statement]"></ng-content>
-    </div>
-    <div class="solution">
-        <h3 class="title">Solución Propuesta</h3>
-        <ng-content  select="[solution]"></ng-content>
-    </div>
-    <div class="user-solution" >
-        <h3 class="title">Tu solución</h3>
-        <ng-content select="[user-solution]"></ng-content>
-    </div>
+  <div class="statement">
+    <ng-content select="app-markdown"></ng-content>
+  </div>
+  <div class="solution">
+    <h3 class="title">Solución Propuesta</h3>
+    <ng-content select="[solution]"></ng-content>
+  </div>
+  <div class="user-solution">
+    <h3 class="title">Tu solución</h3>
+    <ng-content select="[user-solution]"></ng-content>
+  </div>
 </div>

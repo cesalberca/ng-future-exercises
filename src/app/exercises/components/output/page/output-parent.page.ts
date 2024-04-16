@@ -10,7 +10,7 @@ import { OutputParentComponent } from '../exercise/output-parent.component'
   standalone: true,
   template: `
     <app-solution-component>
-      <app-markdown statement src="assets/app/exercises/components/output/README.md" />
+      <app-markdown src="assets/app/exercises/components/output/README.md" />
       <app-output-parent-solution solution />
       <app-output-parent user-solution />
     </app-solution-component>

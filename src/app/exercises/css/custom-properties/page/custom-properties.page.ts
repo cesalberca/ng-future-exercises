@@ -9,7 +9,7 @@ import { CustomPropertiesComponent } from '../custom-properties.component'
   standalone: true,
   template: `
     <app-solution-component>
-      <app-markdown statement src="assets/app/exercises/css/custom-properties/README.md" />
+      <app-markdown src="assets/app/exercises/css/custom-properties/README.md" />
       <app-custom-properties-solution solution />
       <app-custom-properties user-solution />
     </app-solution-component>

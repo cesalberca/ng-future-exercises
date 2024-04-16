@@ -9,7 +9,7 @@ import { PipeSolutionComponent } from '../_solution/pipe.component'
   standalone: true,
   template: `
     <app-solution-component>
-      <app-markdown statement src="assets/app/exercises/components/pipe/README.md" />
+      <app-markdown src="assets/app/exercises/components/pipe/README.md" />
       <app-pipe-solution solution />
       <app-pipe user-solution />
     </app-solution-component>

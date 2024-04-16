@@ -9,7 +9,7 @@ import { AttributeBindingComponent } from '../attribute-binding/attribute-bindin
   standalone: true,
   template: `
     <app-solution-component>
-      <app-markdown statement src="assets/app/exercises/components/attribute-binding/README.md" />
+      <app-markdown src="assets/app/exercises/components/attribute-binding/README.md" />
       <app-attribute-binding-solution solution [text]="result" />
       <app-attribute-binding user-solution [text]="result" />
     </app-solution-component>

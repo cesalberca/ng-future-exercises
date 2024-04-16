@@ -9,7 +9,7 @@ import { HttpClientSolutionComponent } from '../_solution/http-client-solution.c
   standalone: true,
   template: `
     <app-solution-component>
-      <app-markdown statement src="assets/app/exercises/components/http-client/README.md" />
+      <app-markdown src="assets/app/exercises/components/http-client/README.md" />
       <app-http-client-solution solution />
       <app-http-client user-solution />
     </app-solution-component>

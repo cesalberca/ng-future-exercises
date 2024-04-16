@@ -10,7 +10,7 @@ import { RouterComponent } from '../exercise/router.component'
   standalone: true,
   template: `
     <app-solution-component>
-      <app-markdown statement src="assets/app/exercises/components/router/README.md" />
+      <app-markdown src="assets/app/exercises/components/router/README.md" />
       <app-router-solution solution />
       <app-router user-solution />
     </app-solution-component>
