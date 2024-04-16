@@ -26,7 +26,7 @@ Nota: haremos uso de rutas anidadas con el objetivo de quedarnos siempre en la p
 - En el componente `router` añade un constructor que reciba el router para poder usarlo de forma programática.
 
 ```typescript
-constructor(private router: Router) {}
+constructor(private readonly router: Router) {}
 ```
 
 - Añade un método en la clase que use el router para redirigir a la página creada anteriormente.
@@ -45,14 +45,11 @@ constructor(private router: Router) {}
 <a routerLink="solution/page" [queryParams]="{ title: 'Title 1'}">Solution Page (title 1)</a>
 ```
 
-- En el componente al que vas a redirigir añade una función `ngOnInit` para suscribirte a los query params:
+- En el componente al que vas a redirigir añade como campos el siguiente código con tal de escuchar cambios sobre el queryParam title:
 
 ```typescript
-ngOnInit() {
-    this.route.queryParams.subscribe(params => {
-      this.title = params['title']
-    })
-  }
+queryParams = toSignal(this.route.queryParams, { initialValue: { title: '' } })
+title = computed(() => this.queryParams().title)
 ```
 
 - Muestra el valor del parámetro en pantalla a través del html.

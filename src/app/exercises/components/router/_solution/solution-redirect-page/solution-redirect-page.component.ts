@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, computed } from '@angular/core'
 import { ActivatedRoute } from '@angular/router'
+import { toSignal } from '@angular/core/rxjs-interop'
 
 @Component({
   selector: 'app-solution-redirect-page',
@@ -7,14 +8,9 @@ import { ActivatedRoute } from '@angular/router'
   styleUrl: './solution-redirect-page.component.css',
   standalone: true,
 })
-export class SolutionRedirectPageComponent implements OnInit {
-  title: string | null = null
+export class SolutionRedirectPageComponent {
+  queryParams = toSignal(this.route.queryParams, { initialValue: { title: '' } })
+  title = computed(() => this.queryParams().title)
 
-  constructor(private route: ActivatedRoute) {}
-
-  ngOnInit() {
-    this.route.queryParams.subscribe(params => {
-      this.title = params['title']
-    })
-  }
+  constructor(private readonly route: ActivatedRoute) {}
 }
