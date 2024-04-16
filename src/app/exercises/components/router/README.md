@@ -36,3 +36,23 @@ constructor(private router: Router) {}
 - Crea un nuevo componente que servirá para renderizar un mensaje por pantalla cuando un path no se encuentre (dentro del subpath de /router/exercise).
 - En el fichero `router.ts` añade el `path: '**'` con el componente que acabas de crear.
 - Añade un nuevo link con un path que no exista.
+
+### Query Params
+
+- Añade 1 link nuevo que contenga un query params:
+
+```html
+<a routerLink="solution/page" [queryParams]="{ title: 'Title 1'}">Solution Page (title 1)</a>
+```
+
+- En el componente al que vas a redirigir añade una función `ngOnInit` para suscribirte a los query params:
+
+```typescript
+ngOnInit() {
+    this.route.queryParams.subscribe(params => {
+      this.title = params['title']
+    })
+  }
+```
+
+- Muestra el valor del parámetro en pantalla a través del html.
