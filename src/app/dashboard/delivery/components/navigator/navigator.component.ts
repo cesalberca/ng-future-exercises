@@ -35,7 +35,7 @@ export class NavigatorComponent {
   ) {}
 
   ngDoCheck() {
-    const pathname = this.location.path().replace('/', '')
+    const pathname = this.location.path().split('/')[1]
     this.currentPage = pagesMap[pathname]
     this.currentOption = { id: this.currentPage.link, name: this.currentPage.title }
     this.isFirstPage = this.currentPage.prev === null

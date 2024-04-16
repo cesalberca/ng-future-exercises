@@ -18,7 +18,7 @@ Nota: haremos uso de rutas anidadas con el objetivo de quedarnos siempre en la p
 - En el html del componente `router` añade un link para redirigir a este nuevo componente y el componente `<router-outlet></router-outlet>` (donde se renderizará el componente).
 
 ```html
-<a routerLink="solution/page" routerLinkActive="active" ariaCurrentWhenActive="page">Solution Page Link</a>
+<a routerLink="solution/page">Solution Page Link</a>
 ```
 
 ### Navegación programática
