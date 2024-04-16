@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ContentChild } from '@angular/core'
+import { ChangeDetectionStrategy, Component, ContentChild, DoCheck } from '@angular/core'
 import { RouterLink, Router } from '@angular/router'
 import { Location } from '@angular/common'
 import { NgIconComponent, provideIcons } from '@ng-icons/core'
@@ -16,7 +16,7 @@ import { Option } from '../../../domain/option'
   changeDetection: ChangeDetectionStrategy.OnPush,
   viewProviders: [provideIcons({ heroChevronLeft, heroChevronRight })],
 })
-export class NavigatorComponent {
+export class NavigatorComponent implements DoCheck {
   @ContentChild(NavigatorComponent, { static: true }) navigatorComponent!: NavigatorComponent
   pagesList = Object.values(pagesMap).splice(1)
   options: Option[] = this.pagesList.map(page => ({ id: page.link, name: page.title }))
