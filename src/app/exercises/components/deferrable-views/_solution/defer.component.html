@@ -1,5 +1,5 @@
-@defer {
-  <div>Large component</div>
-} @placeholder (minimum 1000ms) {
-  <p>Placeholder content</p>
+@defer (on viewport) {
+ <app-large-component />
+} @placeholder (minimum 5000ms) {
+  <p>Placeholder content (5 segundos)</p>
 }
