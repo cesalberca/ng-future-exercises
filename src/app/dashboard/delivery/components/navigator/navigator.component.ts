@@ -38,7 +38,7 @@ export class NavigatorComponent implements DoCheck {
   }
 
   getCurrentPage() {
-    const pathname = this.location.path().split('/')[1]
+    const pathname = this.location.path().split('/')[1] ?? ''
     return pagesMap[pathname]
   }
 
