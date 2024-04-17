@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test'
 
 test.describe('navigation', () => {
-  test('habit should be created', async ({ page }) => {
+  test('should navigate to next exercise', async ({ page }) => {
     await page.goto('/')
 
     await page.getByLabel('Siguiente ejercicio').click()

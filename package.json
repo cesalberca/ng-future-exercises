@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test:unit": "jest",
     "test:e2e": "npx playwright test --ui",
+    "test:e2e:ci": "npx playwright test",
     "lint": "ng lint",
     "format": "prettier --write --ignore-path .gitignore .",
     "prepare": "husky"
