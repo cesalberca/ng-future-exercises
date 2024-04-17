@@ -1,0 +1,11 @@
+@for (todo of filteredTodos(); track todo.name) {
+  @if (todo.completed) {
+    <span>✅</span>
+  } @else {
+    <span>❌</span>
+  }
+  <p>{{ todo.name }}</p>
+}
+<p>Completed {{ completedTodos() }}</p>
+<button (click)="changeStatus('all')">All</button>
+<button (click)="changeStatus('completed')">Completed</button>
