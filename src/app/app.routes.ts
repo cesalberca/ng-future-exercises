@@ -18,6 +18,7 @@ import { PipePage } from './exercises/components/pipe/page/pipe.page'
 import { RouterPage } from './exercises/components/router/page/router.page'
 import { routesOfRouterExercise } from './exercises/components/router/routes'
 import { DeferPage } from './exercises/components/deferrable-views/page/defer.page'
+import { SignalsTodoPage } from './exercises/components/signals-todo/page/signals-todo.page'
 
 export const routes: Routes = [
   {
@@ -84,6 +85,11 @@ export const routes: Routes = [
     title: 'Signals Effect',
     path: 'signals-effect',
     component: SignalsEffectPage,
+  },
+  {
+    title: 'Signals Todo',
+    path: 'signals-todo',
+    component: SignalsTodoPage,
   },
   {
     title: 'Custom Properties',
