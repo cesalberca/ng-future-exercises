@@ -1,16 +1,22 @@
-<div class='navigator'>
-    <div class="navbar">
-        <app-selector 
-        [options]="options" 
-        [currentOption]="currentOption" 
-        (selected)="onChange($event)"
-        />
-        <div class="buttons">
-            <a [class]="isFirstPage ? 'button disabled' : 'button'" [routerLink]="currentPage.prev"><ng-icon name="heroChevronLeft"></ng-icon></a>
-            <a [class]="isLastPage ? 'button disabled' : 'button'" [routerLink]="currentPage.next"><ng-icon name="heroChevronRight"></ng-icon></a>
-        </div>
+<div class="navigator">
+  <div class="navbar">
+    <app-selector [options]="options" [currentOption]="currentOption" (selected)="onChange($event)" />
+    <div class="buttons">
+      <a
+        aria-label="Ejercicio previo"
+        [class]="isFirstPage ? 'button disabled' : 'button'"
+        [routerLink]="currentPage.prev"
+        ><ng-icon name="heroChevronLeft"></ng-icon
+      ></a>
+      <a
+        aria-label="Siguiente ejercicio"
+        [class]="isLastPage ? 'button disabled' : 'button'"
+        [routerLink]="currentPage.next"
+        ><ng-icon name="heroChevronRight"></ng-icon
+      ></a>
     </div>
-    <div class="content">
-        <ng-content></ng-content>
-    </div>
+  </div>
+  <div class="content">
+    <ng-content></ng-content>
+  </div>
 </div>
