@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+
+  & > p {
+    min-width: 20px;
+  }
+}
+
+button {
+  cursor: pointer;
+  padding: 4px 16px;
+  background-color: transparent;
+  border: 1px solid rebeccapurple;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: rgba(102, 51, 153, 0.2);
+  }
+  &:active {
+    background-color: rgba(102, 51, 153, 0.4);
+  }
+}

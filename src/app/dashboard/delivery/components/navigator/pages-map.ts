@@ -117,8 +117,14 @@ export const pagesMap: { [key: string]: PageNode } = {
   },
   'custom-properties': {
     prev: 'signals-todo',
-    next: null,
+    next: 'services',
     link: 'custom-properties',
-    title: 'Custom Properties.',
+    title: 'Custom Properties',
+  },
+  services: {
+    prev: 'custom-properties',
+    next: null,
+    link: 'services',
+    title: 'Services & InjectionToken',
   },
 }

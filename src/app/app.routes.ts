@@ -19,6 +19,7 @@ import { RouterPage } from './exercises/components/router/page/router.page'
 import { routesOfRouterExercise } from './exercises/components/router/routes'
 import { DeferPage } from './exercises/components/deferrable-views/page/defer.page'
 import { SignalsTodoPage } from './exercises/components/signals-todo/page/signals-todo.page'
+import { ServicesPage } from './exercises/components/services/page/services.page'
 
 export const routes: Routes = [
   {
@@ -116,6 +117,11 @@ export const routes: Routes = [
     title: 'Deferrable View',
     path: 'defer',
     component: DeferPage,
+  },
+  {
+    title: 'Services',
+    path: 'services',
+    component: ServicesPage,
   },
   {
     title: 'Hello World',
