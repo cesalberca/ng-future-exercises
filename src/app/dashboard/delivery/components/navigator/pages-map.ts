@@ -111,8 +111,14 @@ export const pagesMap: { [key: string]: PageNode } = {
   },
   'custom-properties': {
     prev: 'signals-computed',
-    next: null,
+    next: 'services',
     link: 'custom-properties',
-    title: 'Custom Properties.',
+    title: 'Custom Properties',
+  },
+  services: {
+    prev: 'custom-properties',
+    next: null,
+    link: 'services',
+    title: 'Services',
   },
 }
