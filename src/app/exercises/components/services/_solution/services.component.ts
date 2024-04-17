@@ -1,4 +1,5 @@
 import { Component, signal } from '@angular/core'
+import { CounterService } from './services/counter.service'
 
 @Component({
   selector: 'app-services-solution',
@@ -8,17 +9,19 @@ import { Component, signal } from '@angular/core'
   imports: [],
 })
 export class ServicesSolutionComponent {
-  value = signal(0)
+  value = signal(this.counter.getInitialValue())
+
+  constructor(private readonly counter: CounterService) {}
 
   reset() {
-    this.value.set(0)
+    this.value.set(this.counter.getInitialValue())
   }
 
   increment() {
-    this.value.update(value => value + 1)
+    this.value.update(value => this.counter.increment(value))
   }
 
   decrease() {
-    this.value.update(value => value - 1)
+    this.value.update(value => this.counter.decrease(value))
   }
 }
