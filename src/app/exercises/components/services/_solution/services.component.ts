@@ -1,5 +1,5 @@
-import { Component, signal } from '@angular/core'
-import { CounterService } from './services/counter.service'
+import { Component, Inject, signal } from '@angular/core'
+import { Counter, CounterInjectionToken } from './services/counter'
 
 @Component({
   selector: 'app-services-solution',
@@ -11,7 +11,7 @@ import { CounterService } from './services/counter.service'
 export class ServicesSolutionComponent {
   value = signal(this.counter.getInitialValue())
 
-  constructor(private readonly counter: CounterService) {}
+  constructor(@Inject(CounterInjectionToken) private readonly counter: Counter) {}
 
   reset() {
     this.value.set(this.counter.getInitialValue())

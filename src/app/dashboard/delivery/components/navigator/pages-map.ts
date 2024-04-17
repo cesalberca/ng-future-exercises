@@ -119,6 +119,6 @@ export const pagesMap: { [key: string]: PageNode } = {
     prev: 'custom-properties',
     next: null,
     link: 'services',
-    title: 'Services',
+    title: 'Services & InjectionToken',
   },
 }
